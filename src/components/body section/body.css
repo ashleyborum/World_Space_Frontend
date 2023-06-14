@@ -1,0 +1,34 @@
+.mainContent {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.mainContent .bottom {
+  width: 82%;
+  margin: auto;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.mainContent .bottom a {
+  color: var(--whiteColor);
+  margin: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.mainContent .bottom .scrollContainer {
+  justify-content: space-between;
+}
+.mainContent .bottom .scrollContainer .newsBlock {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 24.5%;
+  gap: 1rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+.mainContent .bottom .scrollContainer .icon {
+  position: relative;
+  color: var(--whiteColor);
+  font-size: 90px;
+  top: 50%;
+}/*# sourceMappingURL=body.css.map */
