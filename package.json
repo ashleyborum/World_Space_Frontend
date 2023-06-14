@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "public/electron.js",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://ashleyborum.github.io/World_Space_Frontend",
   "dependencies": {
     "@react-three/drei": "^9.57.2",
     "@react-three/fiber": "^8.12.0",
