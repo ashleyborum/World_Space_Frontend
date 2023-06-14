@@ -1,0 +1,112 @@
+:root {
+    --PrimaryColor: #4a717b; 
+    --HoverColor: #bdf094;           
+    --brightGreen: #00cb8d;
+    --paleGreen: hsl(192,40%,90%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(193,100%,13%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --greenColor: hsl(184,100%,16%);
+  
+    /* Font and typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+.heroSection {
+    //margin-top: 2rem;
+
+    .overviewSection {
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        
+        .leftOverview {
+            .title {
+                color: var(--whiteColor);
+                margin: 1rem;
+                margin-bottom: 2rem;
+                font-weight: 600;
+                font-size: var(--h2FontSize);
+
+                .days {
+                    color: var(--brightGreen);
+                }
+            }
+
+            .scoreContainer {
+                .singleItem {
+                    position: relative;
+                    height: 230px;
+                    width: 270px;
+                    align-items: center;
+                    margin: 1rem;
+                    padding: 2rem;
+                    border-radius: 25px;
+                    border: 3px solid var(--greenColor);
+
+                    h3 {
+                        font-size: var(--h2FontSize);
+                        color: var(--brightGreen);
+                    } 
+
+                    .readout_text {
+                        text-align: center;
+                        margin-top: 20%;
+                        .score {
+                            font-size: var(--biggestFontSize);
+                            font-weight: 600;
+                            color: var(--whiteColor);
+                            text-align: center;
+                        }
+
+                        .readout_subtext {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .units {
+                                font-size: var(--smallFontSize);
+                                color: var(--whiteColor);
+                            }
+
+                            .icon {
+                                color: var(--brightGreen);
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .rightOverview {
+            padding: 1rem;
+            margin: 1rem;
+            margin-bottom: 0;
+            text-align: center;
+            color: var(--whiteColor);
+
+            .title {
+                font-weight: 600;
+                margin-top: 1rem;
+            }
+
+            .earth {
+                height: 250px;
+            }
+
+            p {
+                font-weight: 800;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

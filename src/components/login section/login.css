@@ -1,0 +1,86 @@
+:root {
+  --PrimaryColor: #4a717b;
+  --HoverColor: #bdf094;
+  --brightGreen: #00cb8d;
+  --paleGreen: hsl(192,40%,90%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(193,100%,13%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --greenColor: hsl(184,100%,16%);
+  /* Font and typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.auth-form-container {
+  position: relative;
+  top: 20%;
+  height: 600px;
+}
+.auth-form-container .login-form, .auth-form-container .register-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.auth-form-container .login-form label, .auth-form-container .register-form label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+.auth-form-container .login-form input, .auth-form-container .register-form input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+.auth-form-container .login-form .uidnote .offscreen, .auth-form-container .register-form .uidnote .offscreen {
+  position: absolute;
+  left: -9999px;
+}
+.auth-form-container .login-form button, .auth-form-container .register-form button {
+  border: none;
+  background-color: var(--PrimaryColor);
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--whiteColor);
+  font-weight: bold;
+}
+.auth-form-container .login-form .instructions, .auth-form-container .register-form .instructions {
+  font-size: var(--normalFontSize);
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+.auth-form-container .login-form .instructions > svg, .auth-form-container .register-form .instructions > svg {
+  margin-right: 0.25rem;
+}
+.auth-form-container .login-form .offscreen, .auth-form-container .register-form .offscreen {
+  position: absolute;
+  left: -9999px;
+}
+.auth-form-container .link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}/*# sourceMappingURL=login.css.map */

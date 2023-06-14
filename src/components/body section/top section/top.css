@@ -1,0 +1,145 @@
+/* Colors and styles (Default) */
+:root {
+  --PrimaryColor: #4a717b;
+  --HoverColor: #bdf094;
+  --brightGreen: #00cb8d;
+  --paleGreen: hsl(192,40%,90%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: #003442;
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  /* Font and typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.topSection {
+  background: var(--bgColor);
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.topSection .headerSection {
+  justify-content: space-between;
+  width: 82%;
+  margin: auto;
+}
+.topSection .headerSection .title .image {
+  font-size: 25px;
+  color: var(--whiteColor);
+  margin-right: 1rem;
+}
+.topSection .headerSection .title h1 {
+  font-size: var(--h1FontSize);
+  color: var(--whiteColor);
+  font-weight: 700;
+}
+.topSection .headerSection .searchBar {
+  padding: 0.8rem 2rem;
+  background: var(--bgColor);
+  border-radius: 100px;
+  border: 0.2rem solid white;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.topSection .headerSection .searchBar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.topSection .headerSection .searchBar .icon {
+  color: white;
+  font-weight: 700;
+}
+.topSection .headerSection .searchBar .icon:hover {
+  cursor: pointer;
+}
+.topSection .headerSection .adminDiv {
+  gap: 1rem;
+  color: var(--whiteColor);
+}
+.topSection .headerSection .adminDiv .icon {
+  font-size: var(--biggestFontSize);
+  border-radius: 5px;
+  padding: 5px;
+}
+.topSection .headerSection .adminDiv .admin-container {
+  font-size: var(--normalFontSize);
+  color: var(--whiteColor);
+  font-weight: 500;
+  cursor: pointer;
+}
+.topSection .headerSection .adminDiv .admin-container .adminImage {
+  border: 3px solid var(--whiteColor);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+}
+.topSection .headerSection .adminDiv .admin-container .adminImage .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.topSection .headerSection .adminDiv .admin-container .adminName {
+  margin-left: 1rem;
+}
+.topSection .headerSection .adminDiv .dropdown-menu {
+  position: absolute;
+  top: 114px;
+  right: 158px;
+  background-color: var(--whiteColor);
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 200px;
+  color: var(--bgColor);
+  z-index: 1;
+}
+.topSection .headerSection .adminDiv .dropdown-menu .dropdownItem {
+  display: flex;
+  padding: 10px 0;
+  margin: 10px auto;
+}
+.topSection .headerSection .adminDiv .dropdown-menu .dropdownItem a {
+  max-width: 200px;
+  margin-left: 10px;
+  transition: 0.5s ease;
+  color: var(--blackColor);
+}
+.topSection .headerSection .adminDiv .dropdown-menu .dropdownItem:hover {
+  color: var(--brightGreen);
+  cursor: pointer;
+}
+.topSection .headerSection .adminDiv .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--whiteColor);
+  transform: rotate(45deg);
+}
+.topSection .headerSection .adminDiv .dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+  transition: 0.5s ease;
+}
+.topSection .headerSection .adminDiv .dropdown-menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-20px);
+  transition: 0.5s ease;
+}
+.topSection .nav_line {
+  margin-top: 2rem;
+  border-width: 0.5px;
+}/*# sourceMappingURL=top.css.map */

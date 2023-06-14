@@ -1,0 +1,49 @@
+:root {
+  --PrimaryColor: #4a717b;
+  --HoverColor: #bdf094;
+  --brightGreen: #00cb8d;
+  --paleGreen: hsl(192,40%,90%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(193,100%,13%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --greenColor: hsl(184,100%,16%);
+  /* Font and typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.rssFeedSection {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.rssFeedSection .singleItem {
+  position: relative;
+  height: 250px;
+  width: 280px;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 24px;
+  background-color: var(--PrimaryColor);
+}
+.rssFeedSection .singleItem .image {
+  margin-bottom: 1rem;
+  border-radius: 15px 15px 0 0;
+}
+.rssFeedSection .singleItem .date {
+  margin: 0 2rem;
+  font-size: var(--smallestFontSize);
+  color: var(--whiteColor);
+}
+.rssFeedSection .singleItem .title {
+  font-size: var(--normalFontSize);
+  color: var(--whiteColor);
+  margin: 0.5rem 2rem 1rem 2rem;
+}/*# sourceMappingURL=rssFeed.css.map */
