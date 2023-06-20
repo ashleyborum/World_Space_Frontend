@@ -26,15 +26,27 @@ function News() {
       <Top />
       <div className="articleWrapper">
         <div className="head__text">
-            <h1>Eco News</h1>
+            <h1>Latest News</h1>
         </div>
         <div className="articles"> 
           {articles.map((item, i) =>
             <Feed 
+              key = {i}
+              image = {item.item.content.substring(43, 162)}
+              date = {item.item.pubDate}
+              title = {item.item.title}
+              link = {item.item.link}
+              content = {item.item.contentSnippet}
+            />
+          )}
+
+          {articles.map((item, i) =>
+            <Feed 
             key = {i}
+            image = {item.item.content.substring(43, 162)}
+            date = {item.item.pubDate}
             title = {item.item.title}
             link = {item.item.link}
-            date = {item.item.pubDate}
             content = {item.item.contentSnippet}
             />
           )}
