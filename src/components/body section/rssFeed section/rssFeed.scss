@@ -39,18 +39,16 @@
             margin-bottom: 1rem;
             border-radius: 15px 15px 0 0;
         }
-
-
-        .date {
-            margin: 0 2rem;
-            font-size: var(--smallestFontSize);
-            color: var(--whiteColor);
-        }
-
-        .title {
-            font-size: var(--normalFontSize);
-            color: var(--whiteColor);
-            margin: 0.5rem 2rem 1rem 2rem;
-        }
     } 
+    .date {
+        margin: 0 2rem;
+        font-size: var(--smallestFontSize);
+        color: var(--whiteColor);
+    }
+
+    .title {
+        font-size: var(--normalFontSize);
+        color: var(--whiteColor);
+        margin: 0.5rem 2rem 1rem 2rem;
+    }
 }

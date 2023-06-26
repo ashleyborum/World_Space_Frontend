@@ -6,11 +6,11 @@ const RssFeed = ({ image, title, date, link }) => {
         <div className="rssFeedSection">
             <div className="singleItem" >
                 <img className="image" src={image}></img>
-                <p className="date">{date}</p>
-                <h3 className="title" >{title}... <a href ={link} target = "_blank"
-                    rel= "noopener noreferrer">Read More</a></h3>
-                
             </div>
+            <p className="date">{date}</p>
+                <h3 className="title" >{title}... <a href ={link} target = "_blank"
+                    rel= "noopener noreferrer">Read More</a>
+                </h3>
         </div>  
     )
 }
