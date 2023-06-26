@@ -31,17 +31,6 @@ function News() {
         <div className="articles"> 
           {articles.map((item, i) =>
             <Feed 
-              key = {i}
-              image = {item.item.content.substring(43, 162)}
-              date = {item.item.pubDate}
-              title = {item.item.title}
-              link = {item.item.link}
-              content = {item.item.contentSnippet}
-            />
-          )}
-
-          {articles.map((item, i) =>
-            <Feed 
             key = {i}
             image = {item.item.content.substring(43, 162)}
             date = {item.item.pubDate}

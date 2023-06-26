@@ -24,26 +24,18 @@
   margin-top: 1rem;
   margin-bottom: 5rem;
 }
-.rssFeedSection .singleItem {
-  position: relative;
-  height: 250px;
-  width: 280px;
-  align-items: center;
-  margin: 1rem;
-  border-radius: 24px;
-  background-color: var(--PrimaryColor);
+.rssFeedSection .article_container {
+  color: var(--whiteColor);
 }
-.rssFeedSection .singleItem .image {
+.rssFeedSection .article_container .image {
   margin-bottom: 1rem;
-  border-radius: 15px 15px 0 0;
+  border-radius: 1rem;
 }
-.rssFeedSection .singleItem .date {
-  margin: 0 2rem;
+.rssFeedSection .article_container .date {
+  margin-bottom: 1rem;
   font-size: var(--smallestFontSize);
-  color: var(--whiteColor);
 }
-.rssFeedSection .singleItem .title {
+.rssFeedSection .article_container .title {
+  margin-top: 1rem;
   font-size: var(--normalFontSize);
-  color: var(--whiteColor);
-  margin: 0.5rem 2rem 1rem 2rem;
 }/*# sourceMappingURL=rssFeed.css.map */

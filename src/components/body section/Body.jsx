@@ -47,7 +47,7 @@ const Body = () => {
                                 key={i}
                                 image = {item.item.content.substring(43,162)}
                                 date = {item.item.pubDate.substring(0, 16)}
-                                title = {item.item.title.substring(0, 38)}
+                                title = {item.item.title}
                                 link = {item.item.link}  
                             />
                         )}
