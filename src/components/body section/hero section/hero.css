@@ -20,6 +20,10 @@
   --smallestFontSize: .75rem;
 }
 
+.heroSection {
+  padding: 2rem 10rem 0rem 10rem;
+  margin: auto;
+}
 .heroSection .overviewSection {
   justify-content: space-between;
   width: 100%;

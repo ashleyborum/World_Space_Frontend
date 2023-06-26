@@ -38,21 +38,23 @@ const Body = () => {
             <div className="bottom">
                 <Hero />
                 <Activity />
-                <a classname="newsTitle" href="/news">Eco News</a>
-                <div className="scrollContainer flex">
-                    <IoIosArrowBack className="icon" />
-                    <a className="newsBlock">
-                        {articles.map((item, i) =>
-                            <RssFeed 
-                                key={i}
-                                image = {item.item.content.substring(43,162)}
-                                date = {item.item.pubDate.substring(0, 16)}
-                                title = {item.item.title}
-                                link = {item.item.link}  
-                            />
-                        )}
-                    </a> 
-                    <IoIosArrowForward className="icon" />
+                <div className="news_section">
+                    <a classname="newsTitle" href="/news">Eco News</a>
+                    <div className="scrollContainer flex">
+                        <IoIosArrowBack className="icon" />
+                        <a className="newsBlock">
+                            {articles.map((item, i) =>
+                                <RssFeed 
+                                    key={i}
+                                    image = {item.item.content.substring(43,162)}
+                                    date = {item.item.pubDate.substring(0, 16)}
+                                    title = {item.item.title}
+                                    link = {item.item.link}  
+                                />
+                            )}
+                        </a> 
+                        <IoIosArrowForward className="icon" />
+                    </div>
                 </div>
             </div>
         </div>
