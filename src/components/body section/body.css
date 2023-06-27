@@ -35,4 +35,19 @@
   gap: 3rem;
   margin: 2rem 0;
   overflow-x: auto;
+}
+.mainContent .bottom .news_section .scrollContainer .icons .left_icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3em;
+}
+.mainContent .bottom .news_section .scrollContainer .icons .left-icon {
+  left: 0;
+}
+.mainContent .bottom .news_section .scrollContainer .icons .right-icon {
+  right: 0;
+}
+.mainContent .bottom .news_section .scrollContainer .icons .hidden {
+  display: none;
 }/*# sourceMappingURL=body.css.map */

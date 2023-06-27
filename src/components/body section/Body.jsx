@@ -54,6 +54,18 @@ const Body = () => {
                             )}
                         </a> 
                         <IoIosArrowForward className="icon" />
+                        
+                        
+                        <div class="icons">
+                            <button class="left-icon icons hidden">
+                                <IoIosArrowBack />
+                            </button>
+                            <button class="right-icon icons">
+                                <IoIosArrowForward />
+                            </button>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

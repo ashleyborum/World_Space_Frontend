@@ -42,6 +42,25 @@
                     font-size: 300px;
                     top: 50%;
                 }*/
+
+                .icons {
+                    .left_icon {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: 3em;
+                    }
+                    .left-icon {
+                        left: 0;
+                    }
+                    .right-icon {
+                        right: 0;
+                    }
+                    .hidden {
+                        display: none;
+                    }
+                }
+               
             }
         }
 
